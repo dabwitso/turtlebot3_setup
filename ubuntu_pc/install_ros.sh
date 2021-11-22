@@ -75,7 +75,7 @@ echo "[Install RQT & Gazebo]"
 sudo apt install -y ros-$name_ros_version-rqt-* ros-$name_ros_version-gazebo-*
 
 echo "[Environment setup and getting rosinstall]"
-echo "source /opt/ros/${name_ros_version}/setup.${shell}" >> ~/.${shell}.rc
+echo "source /opt/ros/${name_ros_version}/setup.${shell}" >> ~/.${shell}rc
 sudo apt install -y python3-rosinstall python3-rosinstall-generator python3-wstool build-essential git
 
 echo "[Install rosdep and Update]"
@@ -107,7 +107,7 @@ sh -c "echo \"source ~/$name_catkin_workspace/devel/setup.bash\" >> ~/.bashrc"
 sh -c "echo \"export ROS_MASTER_URI=http://localhost:11311\" >> ~/.bashrc"
 sh -c "echo \"export ROS_HOSTNAME=localhost\" >> ~/.bashrc"
 
-source $HOME/.${shell}
+source $HOME/.${shell}rc
 
 echo "[Complete!!!]"
 exit 0

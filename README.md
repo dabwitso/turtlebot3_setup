@@ -8,7 +8,9 @@ These scripts install all dependencies and makes network setup easy for both pc 
 ```
   sudo apt install git -y
   git clone https://github.com/dabwitso/turtlebot3_setup.git
-  cd turtlebot3_setup/ubuntu_pc/
+  cd turtlebot3_setup/os_images/
+  git lfs pull
+  cd ../ubuntu_pc/
 ```
 2. Run installation script which installs all turtlebot3 dependencies. It will also install Ros for ubuntu distro (i.e, 18.04 or 20.04) if not already installed.
 ```
